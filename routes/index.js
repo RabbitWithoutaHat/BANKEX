@@ -8,15 +8,8 @@ router.get('/', (req, res) => {
 });
 
 // TODO: изменить данный маршрутизатор с использованием AJAX
-router.post('/rolls', (req, res) => {
-  console.log(req.body);
-  console.log(req.body);
-
-  const die = new Die(Number(req.body.rollSide));
-  res.json({
-    die,
-    roll: die.roll(),
-  });
+router.get('/users', (req, res) => {
+  res.render('users');
 });
 
 module.exports = router;
