@@ -7,7 +7,7 @@ const PORT = 3000;
 const app = express();
 
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '/public/views'));
 app.use(express.static('public'));
 app.use('/', indexRouter);
 app.listen(PORT, () => console.log(`Started on port: ${PORT}`));

@@ -1,0 +1,11 @@
+<main role="main">
+  <ul class="deales-list no-bullets no-padding">
+    {{#each deales}}
+    <li class="deales-item pad-b-4">
+      {{!-- <a href="/deales/{{id}}" class="deales-title font-2 pad-b-1-4 c-white">{{title}}</a> --}}
+      <span class="deales-date block font-3-4 c-lt-gray">Written on {{deales.createdAt}}</span>
+      <p class="deales-stub">{{body}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</main>
