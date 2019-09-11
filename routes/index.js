@@ -4,6 +4,11 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res) => {
+  res.render('index');
+});
+
+/* GET home page. */
+router.get('/newuser', (req, res) => {
   res.render('newuser');
 });
 
