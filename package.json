@@ -15,7 +15,8 @@
     "url": "https://github.com/RabbitWithoutaHat/BANKEX/issues"
   },
   "homepage": "https://github.com/RabbitWithoutaHat/BANKEX#readme",
-  "dependencies": {},
-  "devDependencies": {},
-  "description": ""
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
+  }
 }
