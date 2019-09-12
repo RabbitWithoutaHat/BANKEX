@@ -1,32 +1,35 @@
-<h1>Creating new user ...</h1>
+<div class="container mt-3 userform">
+  <h1>Creating new user ...</h1>
 
-{{#if errors}}
-<span>Something went wrong:</span>
-<ul class="error-list pad-b-2">
-  {{#each errors as |error|}}
-  <li class="error-item">{{error}}</li>
-  {{/each}}
-</ul>
-{{/if}}
+  {{#if errors}}
+  <span>Something went wrong:</span>
+  <ul class="error-list pad-b-2">
+    {{#each errors as |error|}}
+    <li class="error-item">{{error}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
 
 
-<form name="main" method="post" action="http://localhost:3000">
-  <label for="title-input-name" class="block mar-b-1">Login:</label>
-  <input id="title-input-name" name="name" type="text" value="{{user.name}}" tabindex="1"
-    class="block w-100 no-outline no-border pad-1 mar-b-2">
+  <form name="main" class="align-items-center" method="post" action="http://localhost:3000">
+    <label for="title-input-name" class="thead-light">User name:</label>
+    <input id="title-input-name" name="name" type="text" value="{{user.name}}" tabindex="1"
+      class="block w-100 no-outline no-border pad-1 mar-b-2">
 
-  <label for="title-input-firstName" class="block mar-b-1">User name:</label>
-  <input id="title-input-firstName" name="firstName" type="text" value="{{user.firstName}}" tabindex="1"
-    class="block w-100 no-outline no-border pad-1 mar-b-2">
+    <label for="title-input-firstName" class="thead-light">First name:</label>
+    <input id="title-input-firstName" name="firstName" type="text" value="{{user.firstName}}" tabindex="1"
+      class="block w-100 no-outline no-border pad-1 mar-b-2">
 
-  <label for="title-input-lastName" class="block mar-b-1">Last name:</label>
-  <input id="title-input-lastName" name="lastName" type="text" value="{{user.lastName}}" tabindex="1"
-    class="block w-100 no-outline no-border pad-1 mar-b-2">
+    <label for="title-input-lastName" class="thead-light">Last name:</label>
+    <input id="title-input-lastName" name="lastName" type="text" value="{{user.lastName}}" tabindex="1"
+      class="block w-100 no-outline no-border pad-1 mar-b-2">
 
-  <label for="title-input-password" class="block mar-b-1">Password:</label>
-  <input id="title-input-password" name="password" type="password" value="{{user.password}}" tabindex="1"
-    class="block w-100 no-outline no-border pad-1 mar-b-2">
+    <label for="title-input-password" class="thead-light">Password:</label>
+    <input id="title-input-password" name="password" type="password" value="{{user.password}}" tabindex="1"
+      class="block w-100 no-outline no-border pad-1 mar-b-2">
 
-  <input type="submit" value="Register" tabindex="3"
-    class="block button w-100 mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline">
-</form>
+    <input type="submit" value="Register" tabindex="3"
+      class="block button w-100 mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline">
+  </form>
+
+</div>

@@ -2,7 +2,13 @@ let express = require('express');
 let router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res) {
-  res.render('index');
+router.get('/', (req, res) => {
+  res.render('deals');
 });
+
+// TODO: изменить данный маршрутизатор с использованием AJAX
+router.get('/users', async (req, res) => {
+  res.render('users');
+});
+
 module.exports = router;

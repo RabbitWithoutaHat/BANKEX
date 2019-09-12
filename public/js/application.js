@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import axios from 'axios';
 // const axios = require('axios');
 
@@ -34,3 +35,11 @@ document.addEventListener('DOMContentLoaded', event => {
     });
   }
 });
+=======
+// let respData = [];
+// document.addEventListener('DOMContentLoaded', async (event) => {
+//   const response = await fetch('http://192.168.1.197:4000/users/', {});
+//   respData = await response.json();
+//   console.log(respData);
+// });
+>>>>>>> aa941ba76ef6c3439cbdbddc9e312c5bb496413c
