@@ -9,10 +9,6 @@ router.get('/', (req, res) => {
 
 // TODO: изменить данный маршрутизатор с использованием AJAX
 router.get('/users', async (req, res) => {
-  const response = await fetch('http://192.168.1.197:4000/users/', {});
-  const respData = await response.json();
-  console.log(respData);
-
   res.render('users');
 });
 
