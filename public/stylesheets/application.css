@@ -1509,5 +1509,6 @@ p {
     white-space: normal
 }
 .userform{
-    margin: 100px;
+    margin: 50px;
+    width: 50%
 }
